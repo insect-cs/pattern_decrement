@@ -16,15 +16,15 @@ int main(){
     return 0;
 }
 
-void pattern(int n)
+void pattern(int n) //the logic of pattern
 {
-    for(int i=1; i<=n; i++)
+   for (int i = n; i >= 1; --i)
     {
-        for(int j=i; j<=n-i+1; j++)
-        {
-            printf("*");
-        }
-        printf("\n");
-    }
+      for (int j = 1; j <= i; ++j)
+      {
+         printf("* ");
+      }
+      printf("\n");
+   }
     
 }
